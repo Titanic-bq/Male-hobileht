@@ -1,0 +1,166 @@
+/* reset browser css */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*main */
+
+body {
+  font-family: "Segoe UI", "Tahoma", "Verdana", "sans-serif";
+  line-height: 1.7em;
+  margin-left: 50px;
+}
+a {
+  text-decoration: none;
+  color: #000000;
+}
+
+/*Container*/
+.container {
+  margin: auto;
+  max-width: 1200px;
+  padding: 0 20px;
+  overflow: auto;
+}
+
+/*esileht showcase*/
+#showcase {
+  background: url("../img/avalehetaust.jpg") no-repeat center center/cover;
+  height: 600px;
+}
+#showcase .showcase-content {
+  color: hsl(48, 61%, 48%);
+  text-align: center;
+  padding-top: 170px;
+}
+/*sissejuhatus*/
+.tutvustus {
+  padding: 50px 0;
+  text-align: center;
+  background: #f8f9f8;
+}
+.border {
+  border-style: groove;
+  border-width: 5px;
+  width: 500px;
+}
+
+.border:hover {
+  background-color: #f1ee30;
+}
+
+/*kuidas alustada?*/
+#kuidas-alustada {
+  text-align: center;
+  padding: 50px 0;
+}
+/*ringid*/
+.dot {
+  height: 40px;
+  width: 40px;
+  background-color: #f1ee30;
+  border-radius: 50%;
+  display: inline-block;
+  margin-top: 60px;
+}
+
+.dot1 {
+  height: 40px;
+  width: 40px;
+  background-color: #69923e;
+  border-radius: 50%;
+  display: inline-block;
+  margin-top: 60px;
+}
+
+.dot2 {
+  height: 40px;
+  width: 40px;
+  background-color: #000000;
+  border-radius: 50%;
+  display: inline-block;
+  margin-top: 60px;
+}
+
+.dot3 {
+  height: 40px;
+  width: 40px;
+  background-color: #fd0000;
+  border-radius: 50%;
+  display: inline-block;
+  margin-top: 60px;
+}
+
+/*ringi numbrid*/
+.ringi-number {
+  margin-left: 15px;
+  margin-top: 8px;
+}
+
+/*typography*/
+body {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+}
+h2,
+h3 {
+  margin-left: 30px;
+  padding-bottom: 10px;
+}
+/*navbar*/
+#navbar {
+  background-color: #333;
+  color: #fff;
+  overflow: auto;
+}
+
+#a {
+  margin-left: 10px;
+}
+
+#navbar a {
+  color: #fff;
+}
+#navbar ul {
+  float: right;
+  list-style: none;
+}
+
+#navbar ul li {
+  float: left;
+}
+#navbar ul li a {
+  display: block;
+  padding: 20px;
+  text-align: center;
+}
+#navbar ul li a:hover,
+#navbar ul li a.current {
+  background-color: #c99453;
+  color: #f7c08a;
+}
+/*lingid*/
+.links {
+  margin-top: 10px;
+  margin-left: 100px;
+}
+
+p {
+  margin-bottom: 1rem;
+  margin-left: 10px;
+}
+.small {
+  font-size: 0.875rem;
+  color: gray;
+}
+/*footer*/
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+  margin-left: -50px;
+}
