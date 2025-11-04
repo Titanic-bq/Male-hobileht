@@ -1,0 +1,137 @@
+body,
+html {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+  font-family: Arial, sans-serif;
+}
+
+/* nav */
+#navbar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 10px 0;
+}
+
+#navbar .container {
+  flex-direction: column;
+  gap: 10px;
+}
+
+#navbar a {
+  display: block;
+  margin: 5px 0;
+  font-size: 1.1rem;
+}
+
+/* SHOWCASE */
+#showcase {
+  padding: 40px 10px;
+  text-align: center;
+}
+
+.showcase-content h1 {
+  font-size: 2rem;
+}
+
+.showcase-content p {
+  font-size: 1rem;
+}
+
+/* tutvustus*/
+#tutvustus {
+  padding: 20px 10px;
+  text-align: center;
+}
+
+#tutvustus h2 {
+  font-size: 1.5rem;
+}
+
+.chess-image {
+  width: 100%;
+  height: auto;
+  margin: 10px 0;
+}
+
+.tutvustus-border .border {
+  margin: 10px 0;
+  padding: 10px;
+}
+
+/*kuidas a*/
+#kuidas-alustada {
+  padding: 20px 10px;
+  position: relative;
+  text-align: center;
+}
+
+.float-left,
+.float-right {
+  display: none;
+}
+
+#kuidas-alustada h2 {
+  font-size: 1.6rem;
+  margin-bottom: 20px;
+}
+
+#kuidas-alustada .container {
+  display: block;
+  margin: 0 auto;
+}
+
+#kuidas-alustada h3 {
+  font-size: 1.2rem;
+}
+
+#kuidas-alustada p {
+  font-size: 1rem;
+}
+
+/*link*/
+.link-container {
+  list-style: none;
+  padding: 0;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.link-container .grid-item {
+  width: 100%;
+}
+
+.grid-container {
+  padding: 15px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  background: #f9f9f9;
+}
+
+.grid-container p {
+  font-size: 0.95rem;
+  margin-bottom: 10px;
+}
+
+.grid-container h4 {
+  font-size: 1rem;
+  color: #333;
+}
+
+/* footer */
+footer {
+  text-align: center;
+  padding: 15px;
+  font-size: 0.9rem;
+}
+
+/* logo */
+.logo {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}

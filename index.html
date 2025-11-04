@@ -9,27 +9,28 @@
       src="https://kit.fontawesome.com/24363037ce.js"
       crossorigin="anonymous"
     ></script>
+    <link rel="stylesheet" href="css/style.css" />
     <link
       rel="stylesheet"
       media="screen and (max-width: 500px)"
       href="css/mobile.css"
     />
-    <link rel="stylesheet" href="css/style.css" />
+
     <title>Male</title>
   </head>
   <body>
-    <!--header-->
     <header>
+      <!--Nav-->
       <nav id="navbar">
-        <div class="container header-content">
+        <div class="container">
           <div class="logo">
-            <i class="fa-solid fa-chess-king fa-1.5x">Minu male hobi</i>
+            <i class="fa-solid fa-chess-king fa-1.5x"></i>
           </div>
+          <a href="#tutvustus">Miks mängitakse malet?</a>
+          <a href="#kuidas-alustada">Kuidas alustada?</a>
         </div>
       </nav>
     </header>
-    <!--navigatsioon-->
-    <!--main-->
     <main class="main content">
       <!--showcase-->
       <div id="showcase">
@@ -40,100 +41,182 @@
           </div>
         </div>
       </div>
-      <!--Sissejuhatus-->
-      <section>
-        <div class="tutvustus">
-          <h1>Miks on male oluline?</h1>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa
-            possimus
-          </p>
-          <div class="border">
-            <h3>Arendab mõtlemisviisi</h3>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias,
-              inventore!
-            </p>
-          </div>
-          <div class="border">
-            <h3>Võistuslik</h3>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Quibusdam, alias!
-            </p>
-          </div>
-          <div class="border">
-            <h3>Ühendab inimesi mitmetest kultuuridest</h3>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi,
-              quae!
-            </p>
-          </div>
-        </div>
-      </section>
-      <!--Kuidas alustada?-->
-      <section>
-        <div class="section-container">
-          <h1>Kuidas alustada?</h1>
-
-          <span class="background0"></span>
-
-          <h2>Õpi iga nuppu reeglid</h2>
-          <p>
-            Kui sa ei tea reegleid, siis sa ei suuda ette mõelda ning
-            planeerida.
-          </p>
-          <span class="background0"></span>
-
-          <h2>Mängi oma esimesed mängud, et saada arusaam</h2>
-          <p>
-            Kui sa mängid, saad aru mis on hea ja mis on halb. Kui saad, kasuta
-            chess.com review funktsiooni.
-          </p>
-          <span class="background0"></span>
-
-          <h2>Õpi avanguid ja mida teha keskmängus</h2>
-          <p>
-            Kõige tähtsam on just avangud, sest need määravad ära, kuidas
-            vastane peaks reageerima.
-          </p>
-          <span class="background0"></span>
-
-          <h2>Harjuta regulaarselt</h2>
-          <p>Mida rohkem sa mängid, seda paremaks sa saad.</p>
-        </div>
-      </section>
-
-      <!--Lingis male veebilehtedele-->
-      <section class="link-container">
-        <div class="grid-container">
-          <p>Maailma suurim ....</p>
-          <span class="background1"></span>
-          <a href="https://www.chess.com/"><h3>Chess.com</h3></a>
-        </div>
-
-        <div class="grid-container">
-          <span class="background2"></span>
-
-          <a href="https://www.lichess.org/"><h3>Lichess.org</h3></a>
-
-          <p>
-            Ilma reklaamideta maleplatvorm kus saad samuti mängida inimestega
-            malet
-          </p>
-        </div>
-        <div class="grid-container">
-          <span class="background3"></span>
-          <a href="https://www.youtube.com/results?search_query=chess"
-            ><h3>Youtube</h3>
-          </a>
-          <p>
-            Palju erinevaid kanaleid on Youtubis mis õpetavad malet ja mõlema
-            värvi strateegiaid
-          </p>
-        </div>
-      </section>
     </main>
+    <!--Sissejuhatus-->
+    <section id="tutvustus">
+      <div class="tutvustus-border">
+        <h2>Miks mängitakse malet?</h2>
+        <img
+          src="../Male-hobileht/img/Male.jpg"
+          alt="Chess"
+          class="chess-image"
+        />
+        <div class="border">
+          <h4>Arendab mõtlemisviisi</h4>
+          <p>
+            Male on strateegiamäng, mis nõuab mängijatelt kriitilist mõtlemist,
+            planeerimist ja probleemide lahendamist.
+          </p>
+        </div>
+        <div class="border">
+          <h4>Võistuslik</h4>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam,
+            alias!
+          </p>
+        </div>
+        <div class="border">
+          <h4>Ühendab inimesi mitmetest kultuuridest</h4>
+          <p>
+            Erinevatest kultuuridest pärit inimesed saavad malemängu kaudu
+            ühendust luua ja suhelda omavahel.
+          </p>
+        </div>
+      </div>
+      <div class="male"></div>
+    </section>
+
+    <!--Kuidas alustada ja lingid-->
+    <section id="kuidas-alustada">
+      <div class="ka-li-container">
+        <img
+          src="../Male-hobileht/img/Maletaust.jpg"
+          alt="Left"
+          class="float-left"
+        />
+        <img
+          src="../Male-hobileht/img/Maletaust.jpg"
+          alt="Right"
+          class="float-right"
+        />
+        <div class="ka-container">
+          <h2>Kuidas alustada?</h2>
+        </div>
+
+        <div class="container">
+          <!-- 1st row -->
+          <div class="container">
+            <div style="margin-bottom: 20px">
+              <div class="background">1</div>
+              <div class="container">
+                <h3>Õppi nuppude liikumist</h3>
+                <p>
+                  Kõige tähtsam males on teadmine, kuidas erinevad nupud
+                  liiguvad.
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- 2nd row -->
+          <div class="container">
+            <div style="margin-bottom: 20px">
+              <div class="background">2</div>
+              <div class="container">
+                <h3>Õpi avangut</h3>
+                <p>
+                  Loe veebilehtidelt erinevate avangute kohta ja harjuta neid
+                  päris mängus.
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- 3rd row -->
+          <div class="container">
+            <div style="margin-bottom: 20px">
+              <div class="background">3</div>
+              <div class="container">
+                <h3>Harjuta avanguid</h3>
+                <p>
+                  Kõiga olulisem faas males on avang, seega harjuta erinevaid
+                  avanguid, et leida sinule kõige parem ning nähe vastasi
+                  omasid.
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- 4th row -->
+          <div class="container">
+            <div style="margin-bottom: 20px">
+              <div class="background">4</div>
+              <div class="container">
+                <h3>Mängi teistega</h3>
+                <p>
+                  Väga tähtis on, et sa mängiksid teistega, et saada kogemust ja
+                  nende käest õppida.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <img
+          src="../Male-hobileht/img/Maletaust.jpg"
+          alt="Left"
+          class="float-left"
+        />
+        <img
+          src="../Male-hobileht/img/Maletaust.jpg"
+          alt="Right"
+          class="float-right"
+        />
+        <!--Lingid-->
+        <ul class="link-container">
+          <li class="grid-item">
+            <a href="https://lichess.org" target="_blank">
+              <div class="grid-container">
+                <p>
+                  Mänguplatfrom, mis on ilma reklaamideta ja avatud
+                  lähtekoodiga.
+                </p>
+                <h4>lichess.org</h4>
+                <div class="background">1</div>
+              </div>
+            </a>
+          </li>
+
+          <li class="grid-item">
+            <a href="https://www.chess.com" target="_blank">
+              <div class="grid-container">
+                <p>
+                  Kõige suurem male mänguplatform, kus paljud mängivad vabal
+                  ajal.
+                </p>
+                <h4>chess.com</h4>
+                <div class="background">2</div>
+              </div>
+            </a>
+          </li>
+
+          <li class="grid-item">
+            <a
+              href="https://www.youtube.com/results?search_query=chess"
+              target="_blank"
+            >
+              <div class="grid-container">
+                <p>
+                  Paljud teevad youtube videosid, kus õpetavad malet algajatele
+                  ning nende vigu.
+                </p>
+                <h4>Youtube.com</h4>
+                <div class="background">3</div>
+              </div>
+            </a>
+          </li>
+
+          <li class="grid-item">
+            <a href="https://www.chessbase.com" target="_blank">
+              <div class="grid-container">
+                <p>
+                  Uudised, artiklid ja palju muud malest. Huvitav koht, kus
+                  õppida.
+                </p>
+                <h4>ChessBase</h4>
+                <div class="background">4</div>
+              </div>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </section>
     <footer>
       <p>Tartu Rakenduslik Kolledž &copy;2025, kõik õigused on kaitstud</p>
     </footer>
