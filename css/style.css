@@ -102,6 +102,7 @@ a {
 #male.image-right {
   flex: 0 0 auto; /* don't shrink or grow */
   max-width: 300px;
+  margin-right: 20px;
 }
 
 .image-right img {
@@ -120,7 +121,7 @@ a {
 .float-right {
   float: right;
   width: 150px;
-  margin-left: 20px;
+  margin-right: 20px;
 }
 
 #kuidas-alustada::after {
@@ -198,12 +199,11 @@ li {
 }
 /*link grid*/
 .link-container {
-  margin-top: 50px;
-  margin-left: 100px;
+  margin-top: 70px;
   list-style: none;
   display: grid;
   grid-template-columns: repeat(4, auto);
-  gap: 20px;
+  gap: 10px;
 }
 
 /*grid*/
@@ -225,7 +225,6 @@ li {
 .grid-container h4 {
   position: relative;
   z-index: 2;
-  margin-top: 20px;
 }
 .grid-container:hover {
   transform: translateY(-10px) scale(1.05); /* Moves the element up */
