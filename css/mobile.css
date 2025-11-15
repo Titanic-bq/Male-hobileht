@@ -62,8 +62,9 @@ html {
   padding: 10px;
 }
 
-/*kuidas a*/
+/*kuidas alustada*/
 #kuidas-alustada {
+  margin-top: 300px;
   padding: 20px 10px;
   position: relative;
   text-align: center;
@@ -123,6 +124,11 @@ html {
   color: #333;
 }
 
+.background {
+  background-repeat: no-repeat;
+  background-position: center;
+  height: auto;
+}
 /* footer */
 footer {
   text-align: center;
