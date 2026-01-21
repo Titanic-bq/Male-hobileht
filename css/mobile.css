@@ -4,140 +4,228 @@ html {
   padding: 0;
   box-sizing: border-box;
   overflow-x: hidden;
-  font-family: Arial, sans-serif;
+  font-family: "Segoe UI", "Tahoma", "Verdana", "sans-serif";
 }
 
-/* nav */
-#navbar {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  padding: 10px 0;
-}
+/*
+ * max-width: 480px - väikesed ekraanid
+ */
 
-#navbar .container {
-  flex-direction: column;
-  gap: 10px;
-}
+@media (max-width: 480px) {
+  /* Navigatsioon */
+  #navbar {
+    padding: 12px 0;
+  }
 
-#navbar a {
-  display: block;
-  margin: 5px 0;
-  font-size: 1.1rem;
-}
+  .nav-container {
+    flex-direction: column;
+    gap: 12px;
+    padding: 0 15px;
+  }
 
-/* SHOWCASE */
-#showcase {
-  padding: 40px 10px;
-  text-align: center;
-}
+  #navbar .logo {
+    font-size: 24px;
+    margin: 0;
+  }
 
-.showcase-content h1 {
-  font-size: 2rem;
-}
+  .nav-links {
+    flex-direction: column;
+    gap: 8px;
+    width: 100%;
+  }
 
-.showcase-content p {
-  font-size: 1rem;
-}
+  #navbar a {
+    width: 100%;
+    padding: 10px 12px;
+    font-size: 14px;
+    border-radius: 6px;
+  }
 
-/* tutvustus*/
-#tutvustus {
-  padding: 20px 10px;
-  text-align: center;
-}
+  /* Showcase */
+  #showcase {
+    padding: 30px 15px;
+    background-size: cover;
+    background-position: center;
+  }
 
-#tutvustus h2 {
-  font-size: 1.5rem;
-}
+  .showcase-content {
+    height: auto;
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
 
-.chess-image {
-  width: 100%;
-  height: auto;
-  margin: 10px 0;
-}
+  .showcase-content h1 {
+    font-size: 28px;
+  }
 
-.tutvustus-border .border {
-  margin: 10px 0;
-  padding: 10px;
-}
+  .showcase-content p {
+    font-size: 14px;
+  }
 
-/*kuidas alustada*/
-#kuidas-alustada {
-  margin-top: 300px;
-  padding: 20px 10px;
-  position: relative;
-  text-align: center;
-}
+  /* Tutvustus */
+  #tutvustus {
+    padding: 40px 15px;
+  }
 
-.float-left,
-.float-right {
-  display: none;
-}
+  .tutvustus-border {
+    flex-direction: column;
+    gap: 20px;
+    padding: 0 15px;
+  }
 
-#kuidas-alustada h2 {
-  font-size: 1.6rem;
-  margin-bottom: 20px;
-}
+  .tutvustus-left h2 {
+    font-size: 28px;
+    margin-bottom: 15px;
+  }
 
-#kuidas-alustada .container {
-  display: block;
-  margin: 0 auto;
-}
+  .tutvustus-left > p {
+    font-size: 14px;
+    margin-bottom: 15px;
+  }
 
-#kuidas-alustada h3 {
-  font-size: 1.2rem;
-}
+  .chess-image {
+    width: 100%;
+    height: 280px;
+    margin: 0 auto;
+    max-width: 300px;
+  }
 
-#kuidas-alustada p {
-  font-size: 1rem;
-}
+  .tutvustus-grid {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 12px;
+    margin-top: 20px;
+  }
 
-/*link*/
-.link-container {
-  list-style: none;
-  padding: 0;
-  margin-top: 20px;
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
-}
+  .border {
+    padding: 16px 12px;
+    border-radius: 6px;
+  }
 
-.link-container .grid-item {
-  width: 100%;
-}
+  .border h4 {
+    font-size: 14px;
+  }
 
-.grid-container {
-  padding: 15px;
-  border: 1px solid #ccc;
-  border-radius: 6px;
-  background: #f9f9f9;
-}
+  .border p {
+    font-size: 11px;
+  }
 
-.grid-container p {
-  font-size: 0.95rem;
-  margin-bottom: 10px;
-}
+  /* Galerii */
+  #galerii {
+    padding: 40px 15px;
+  }
 
-.grid-container h4 {
-  font-size: 1rem;
-  color: #333;
-}
+  #galerii h2 {
+    font-size: 28px;
+    text-align: center;
+    margin-bottom: 25px;
+  }
 
-.background {
-  background-repeat: no-repeat;
-  background-position: center;
-  height: auto;
-}
-/* footer */
-footer {
-  text-align: center;
-  padding: 15px;
-  font-size: 0.9rem;
-}
+  .gallery-grid {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 16px;
+  }
 
-/* logo */
-.logo {
-  font-size: 2rem;
-  margin-bottom: 10px;
+  .gallery-item img {
+    height: 150px;
+  }
+
+  /* Kuidas alustada */
+  #kuidas-alustada {
+    padding: 40px 15px;
+  }
+
+  .ka-li-container {
+    margin-top: 20px;
+  }
+
+  .float-left,
+  .float-right {
+    display: none;
+  }
+
+  .ka-container {
+    margin-top: 0;
+    margin-bottom: 30px;
+  }
+
+  .ka-container h2 {
+    font-size: 28px;
+  }
+
+  .steps-grid {
+    grid-template-columns: repeat(1, 1fr);
+    max-width: 100%;
+    gap: 16px;
+  }
+
+  .step-box {
+    padding: 20px 16px;
+    border-radius: 8px;
+  }
+
+  .step-box h3 {
+    font-size: 16px;
+  }
+
+  .step-box p {
+    font-size: 13px;
+  }
+
+  /* Funktsioonid */
+  #funktsioonid {
+    padding: 40px 15px;
+  }
+
+  .features-grid {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 16px;
+  }
+
+  .feature-box {
+    padding: 24px 16px;
+    border-radius: 8px;
+  }
+
+  .feature-box h3 {
+    font-size: 16px;
+  }
+
+  .feature-box p {
+    font-size: 13px;
+  }
+
+  /* Footer */
+  footer {
+    padding: 30px 15px;
+  }
+
+  .footer-content {
+    gap: 15px;
+  }
+
+  .footer-content p {
+    font-size: 13px;
+  }
+
+  .footer-links {
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+  }
+
+  .footer-links a {
+    font-size: 14px;
+    padding: 8px 12px;
+    width: 100%;
+    text-align: center;
+  }
+
+  h1,
+  h2 {
+    font-size: 24px;
+  }
+
+  h3 {
+    font-size: 16px;
+  }
 }
