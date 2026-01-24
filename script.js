@@ -1,4 +1,4 @@
-// Smooth scroll funktsioon noolika jaoks
+// Smooth scroll funktsioon noole jaoks
 document.addEventListener("DOMContentLoaded", function () {
   const scrollArrow = document.querySelector(".scroll-arrow");
 
